@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Chat container */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Área de mensagens */
+  .messages {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  /* Estilo das mensagens */
+  .messages div {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  /* Estilo das mensagens do bot */
+  .bot {
+    background: #f1f0f0;
+    align-self: flex-start;
+  }
+  
+  /* Estilo das mensagens do usuário */
+  .user {
+    background: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  /* Container de entrada */
+  .input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    justify-content: space-between;
+  }
+  
+  /* Estilo do input de texto */
+  input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  /* Estilo do botão */
+  button {
+    padding: 8px 12px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  

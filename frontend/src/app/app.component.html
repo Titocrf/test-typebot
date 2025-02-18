@@ -1,0 +1,12 @@
+<div class="chat-container">
+  <div class="messages">
+    <div *ngFor="let msg of chatHistory" [ngClass]="{'bot': msg.isBot, 'user': !msg.isBot}">
+      {{ msg.text }}
+    </div>
+  </div>
+
+  <div class="input-container">
+    <input [(ngModel)]="currentAnswer" placeholder="Digite sua resposta..." type="text" />
+    <button (click)="submitAnswer()">Enviar</button>
+  </div>
+</div>
